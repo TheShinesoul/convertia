@@ -1,22 +1,23 @@
 @import '../styles/variables.scss';
 
 
-// .home-card:before {
-// 	content:'';
-//     min-height: 88.5vh;
-//     width: 100%;
-// 	position: absolute;
-//     top: 0;
-// 	bottom: 0;
-// 	left: 0;
-// 	right: 0;
-// 	background-color: rgba(0,0,0,0.6);
-//     transition: all 0.5s ease-in-out;
-// }
+.home-card:before {
+	content:'';
+    min-height: auto;
+    width: 100%;
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 99, 188, 0.5);
+    transition: all 0.5s ease-in-out;
+}
 
-// .home-card:hover::before{
-//     background-color: rgba(0,0,0,0.0);
-// }
+.home-card:hover::before{
+    position: relative;
+    background-color: rgba(0, 99, 188, 0);
+}
 
 
 .home-card{
@@ -33,9 +34,7 @@
     transition: all 0.5s ease-in-out;
     background-repeat: no-repeat;
     background-position: top!important;
-    background-size: cover;
-
-    
+    background-size: cover;   
 
     .home-card__text{
         padding: 7px 53px 3px 19px;
@@ -63,7 +62,14 @@
         letter-spacing: 0.42px;
         opacity: 1;
         height: 58px;
-        width: 319px;    
+        width: 319px;
+        transition: all 0.5s ease-in-out;
+        text-transform: uppercase;
+    }
+    .home-button-blue:hover{
+        border: 3px solid $color-blue;
+        background-color: $color-white;
+        color: $color-blue;   
     }
     
     .home-button-orange{
@@ -77,6 +83,70 @@
         letter-spacing: 0.42px;
         opacity: 1;
         height: 58px;
-        width: 319px;    
+        width: 319px;
+        transition: all 0.5s ease-in-out;
+        text-transform: uppercase;    
+    }
+
+    .home-button-orange:hover{
+        border: 3px solid $color-white;
+        background-color: $color-orange;
+        color: $color-white;
+        animation: clip 0.5s infinite;
+    }
+
+    @keyframes ring {
+        0%{
+            transform: rotate(10deg);
+        }
+        50%{
+            transform: rotate(-10deg);
+        }
+        100%{
+            transform: rotate(10deg);
+        }
+    }
+
+}
+
+@media (max-width: 1024px){
+    .home-card .home-card__text{
+        padding: 7px 20px 3px 19px;
+
+    }
+    .home-card__text{
+        font: normal normal bold 3rem 'Roboto'
+    }
+}
+
+@media (max-width: 928px){
+    .home-card__text{
+        font: normal normal bold 3rem 'Roboto'
+    }
+}
+
+@media (max-width: 768px){
+    .home-card{
+        padding-left: 10px;
+    }
+    .home-card__text{
+        font: normal normal bold 2.5rem 'Roboto'
+    }
+    .home-card .home-card__text{
+        padding: 7px 20px 3px 19px;
+
+    }
+}
+
+@media (max-width: 420px){
+    .home-card__text{
+        font: normal normal bold 2rem 'Roboto'
+    }
+
+    .home-card .home-button-blue{
+        width: 100%;
+    }
+    .home-card .home-button-orange{
+        width: 100%;
     }
 }

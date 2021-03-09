@@ -71,3 +71,15 @@ footer{
         }
     }
 }
+
+@media (max-width: 768px) {
+    .logo-img{
+        margin-top: 10px;
+        text-align: center;
+    }
+    footer .footer-logo ul{
+        padding: 0;
+        margin-top: 11px;
+        // justify-content:
+    }
+}

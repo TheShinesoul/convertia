@@ -11,6 +11,7 @@ const Header = () => {
     const [modalObject, setModalObject] = React.useState({})
 
     const showModal = (option) => {
+        document.getElementsByTagName("html")[0].style.overflow = "hidden";
         setModal(true)
         if(option === 'telephone'){
             setModalObject( 'INIGUALABLE' )
@@ -23,7 +24,7 @@ const Header = () => {
         <header>
             <img src={telephone} className="header-telephone" onClick={()=>{showModal('telephone')}}/>
             <img src={logotipo} className="logoTipo"/>
-            <img src={iconmaps} onClick={ () => { showModal('maps') }}/>
+            <img src={iconmaps} className="header-maps"onClick={ () => { showModal('maps') }}/>
             {
                 modal && <Modals title = { modalObject } setModal = {setModal}/>
             }        

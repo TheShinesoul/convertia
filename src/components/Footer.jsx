@@ -7,7 +7,7 @@ const Footer = () => {
         <footer>
             <div className="footer-logo ">
                 <div className="row d-flex align-items-center">
-                    <div className="col-sm-7">
+                    <div className="col-sm-7 logo-img">
                         <img src={logo}></img>
                     </div>
                     <div className="col-sm-5">

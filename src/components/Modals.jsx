@@ -3,12 +3,12 @@ import '../assets/styles/modal.scss'
 
 const Modals = ( {title,setModal} ) => {
     const closeModal = () => {
+        document.getElementsByTagName("html")[0].style.overflow = "auto";
         setModal(false)
     }
     
     return (
-        <div className="modals">
-        <p>{title}</p>
+        <div className="modals no-overflow">
             <div className="contet-close-modal">
                 <div className="close-modal" onClick={closeModal}>
                     <div className="icon-close">x</div>

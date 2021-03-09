@@ -17,14 +17,14 @@ const Contrata = () => {
             <div className="contrata-publicidad"
                 style={{ background: `url(${contrata})` }}>               
                 <div className="row">
-                    <div className="col-sm-6 contrata-text">                        
+                    <div className="col-12 col-sm-12 col-md-6 contrata-text">                        
                         <p className="contrata-text__internet">Internet <span>INIGUALABLE</span></p>
                         <p>TV Interactiva + Telefonía Fija</p>
 
                         <span className="contrata-text__precio">Desde <span>$449</span> al mes</span>
                         <button className="btn-blue">LO QUIERO</button>
                     </div>
-                    <div className="col-sm-6 contrata">
+                    <div className="col-12 col-sm-12 col-md-6 contrata">
                         <div className="contrata-card">
                             <div className="contrata-card__tittle">
                                 <p>¡Contrata ahora!</p>

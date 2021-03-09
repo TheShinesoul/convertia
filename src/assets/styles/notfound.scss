@@ -72,6 +72,7 @@
         padding: 0px 0px 0px 20px;
         display:flex;
         flex-wrap: wrap;
+        justify-content: center;
         .icons{
             display: flex;
             flex-direction: column;
@@ -143,4 +144,25 @@
         width: 319px;
     }
 }
+
+@media (max-width: 768px) {
+    .notFound-info .notFound-info__icons .icons{
+        margin: 0px;
+        
+    }
+
+    .notFound-info .notFound-info__icons{
+        justify-content: center!important;
+    }
+
+    .contact .contact_info{
+        margin-top: 12px;
+        margin-bottom: 12px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 12px;
+    }
+}
+
 
