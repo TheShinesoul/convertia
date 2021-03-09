@@ -1,0 +1,82 @@
+@import '../styles/variables.scss';
+
+
+// .home-card:before {
+// 	content:'';
+//     min-height: 88.5vh;
+//     width: 100%;
+// 	position: absolute;
+//     top: 0;
+// 	bottom: 0;
+// 	left: 0;
+// 	right: 0;
+// 	background-color: rgba(0,0,0,0.6);
+//     transition: all 0.5s ease-in-out;
+// }
+
+// .home-card:hover::before{
+//     background-color: rgba(0,0,0,0.0);
+// }
+
+
+.home-card{
+    padding-left: 102px;
+    padding-bottom: 89px;
+    min-height: 88.5vh;
+    text-align: left;
+    font: normal normal bold 60px/72px 'Roboto';
+    letter-spacing: 0px;
+    color: $color-blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: all 0.5s ease-in-out;
+    background-repeat: no-repeat;
+    background-position: top!important;
+    background-size: cover;
+
+    
+
+    .home-card__text{
+        padding: 7px 53px 3px 19px;
+        background-color: $color-white;
+        p{
+            margin-bottom: 6px;
+        }
+    }
+
+    .home-button{
+        margin-top: 36px;
+        cursor: pointer!important;
+       
+        // position: absolute;
+    }
+
+    .home-button-blue{
+        border: 3px solid $color-white;
+        border-radius: 4px;
+        background-color: $color-blue;
+        color: $color-white;
+        text-align: center;
+        font-family: "Roboto";
+        font: normal normal bold 17px/20px "Roboto";
+        letter-spacing: 0.42px;
+        opacity: 1;
+        height: 58px;
+        width: 319px;    
+    }
+    
+    .home-button-orange{
+        border: 3px solid $color-orange;
+        border-radius: 4px;
+        background-color: $color-white;
+        color: $color-orange;
+        text-align: center;
+        font-family: "Roboto";
+        font: normal normal bold 17px/20px "Roboto";
+        letter-spacing: 0.42px;
+        opacity: 1;
+        height: 58px;
+        width: 319px;    
+    }
+}

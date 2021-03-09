@@ -1,0 +1,23 @@
+header{
+    padding: 20px 50px 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 4px 8px #00000040;
+
+    img{
+        height: 45px;
+        width: 45px;
+        cursor: pointer;
+    }
+
+    .logoTipo{
+        height: 73px;
+        width: 170px;
+    }
+
+    .header-telephone{
+        height: 50px;
+        width: 45px;
+    }
+}
