@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom'
 
 const Home = () => {
     return (
-        <div className="column row row-modifi">
+        <div className="column row home-component">
             <div className="column col-12 col-sm-12 col-md-6">
                 <div className="home-card contrata"
                     style={{ background: `url(${home1})` }}>

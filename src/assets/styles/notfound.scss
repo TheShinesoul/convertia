@@ -1,4 +1,7 @@
 @import '../styles/variables.scss';
+.notFound{
+    animation: pageNotFound 1s linear;
+}
 
 .notFound-image{
     height: 676px;
@@ -165,4 +168,72 @@
     }
 }
 
+@keyframes pageNew {
+    0%{
+        transform: translateX(-100vh) ;
+    }
+    50%{
+        transform: translateX(0vh) ;
+    }
+    75%{
+        transform: translateX(10vh) 
+    }
+    100%{
+        transform: translateX(0vh) ;
+    }
+}
 
+
+  @keyframes pageNotFound {
+    0% {
+      transform: translateX(2000px) scale(0.7);
+      opacity: 0.7;
+    }
+  
+    80% {
+      transform: translateX(0px) scale(0.7);
+      opacity: 0.7;
+    }
+  
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  .icons{
+    animation: icons 2s linear;
+  }
+  .btn-help:hover{
+    animation: icons 1s linear;
+  }
+
+
+  @keyframes icons {
+    from {
+      transform: scale3d(1, 1, 1);
+    }
+  
+    30% {
+      transform: scale3d(1.25, 0.75, 1);
+    }
+  
+    40% {
+      transform: scale3d(0.75, 1.25, 1);
+    }
+  
+    50% {
+      transform: scale3d(1.15, 0.85, 1);
+    }
+  
+    65% {
+      transform: scale3d(0.95, 1.05, 1);
+    }
+  
+    75% {
+      transform: scale3d(1.05, 0.95, 1);
+    }
+  
+    to {
+      transform: scale3d(1, 1, 1);
+    }
+  }

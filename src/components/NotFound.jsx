@@ -20,7 +20,7 @@ const NotFound = () => {
                 <div className="notFound-content">
                     <p>Chin,</p>
                     <p>¿algo no va bien?</p>
-                    <button>Te ayudamos</button>
+                    <button className="btn-help">Te ayudamos</button>
                 </div>
             </div>
             <div className="notFound-info">

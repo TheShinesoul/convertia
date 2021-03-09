@@ -27,7 +27,7 @@ const Paquete = ({imagen,titulo,opcional}) => {
                     {imagen && <img src={imagen}/>}
                     <div className="text">{titulo}</div>
                 </div>
-                <button>LO QUIERO</button>
+                <button className="btn-contratar">LO QUIERO</button>
             </div>
             {
                 infoShow && <div className="more-info d-block1" >
@@ -48,7 +48,7 @@ const Paquete = ({imagen,titulo,opcional}) => {
                 </div>
             }
             
-                       <button className="more_btn" onClick={showInfo}>{infoption}</button>
+            <button className="more_btn" onClick={showInfo}>{infoption}</button>
         </div>
     )
 }

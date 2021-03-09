@@ -38,7 +38,7 @@ const Contrata = () => {
                                         <input type="checkbox" /><label className="input-checkbox">He leído y acepto las políticas de privacidad.</label>
                                     </div>
                                     
-                                    <button>LLÁMAME</button>
+                                    <button className="btn-callme">LLÁMAME</button>
                                 </div>
                             </div>
                         </div>
